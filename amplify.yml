@@ -3,7 +3,9 @@ backend:
   phases:
     build:
       commands:
-        - npm install -g github:stylus/stylus#0.54.8 yarn
+        - nvm use 20
+        - npm --version
+        - node --version
         - yarn --version
         - yarn global add vuepress@next
         - vuepress --version
